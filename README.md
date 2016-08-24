@@ -34,7 +34,7 @@ jquery函数的命名空间用法
   			        .on('mouseup.main',function(){
   			        	               console.log("mouseup")
   			        	               that.css('background','yellow')
-  			        	               //解绑时使用后缀即可
+  			        	               //解绑时使用.main后缀,这样就不会解绑window下其他的mouseover和mouseup函数
   			        	               $(window).off('.main')
   			        	           })
   		})
